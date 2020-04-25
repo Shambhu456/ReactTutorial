@@ -9,8 +9,19 @@ var image2 = require("../src/Asset/Deadpool.png");
 var image3 = require("../src/Asset/Doge.jpg");
 var image4 = require("../src/Asset/Rise.jpg");
 
+
 export default class proHome extends Component {
- 
+  
+  state = {
+    selectedImageSrc: ""
+  }
+
+  selectedImage = (imageSource) => {
+    console.log("ImageSource Parent", imageSource)
+    this.setState({
+      selectedImageSrc: imageSource
+    })
+  }
   render() {
    const  I= [
     {
@@ -50,16 +61,21 @@ export default class proHome extends Component {
               <h1>Webpage</h1>
             </div>
             <div className="st2">
-              <Link to="/settings">
+              
                 <h2>Setting</h2>
-              </Link>
+              
               
             </div>
           </Router>
           
         </div>
         
-        <ImageComponent image={I}/>
+        <ImageComponent image={I} selectedImageProps = {this.selectedImage}/>
+        {this.state.selectedImageSrc ? 
+        <div>
+          <img src={this.state.selectedImageSrc} />
+        </div> : 
+        null}
         <footer className="btm">
             <h1>hdk</h1>
         </footer>
