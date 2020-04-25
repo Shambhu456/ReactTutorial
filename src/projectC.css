@@ -1,0 +1,38 @@
+.st {
+  display: flex;
+  color: blue;
+  font-size: 10px;
+  justify-content: space-between;
+  
+  
+  bottom:0
+}
+
+.st1 {
+  flex-basis: 10%;
+
+  
+}
+
+.st2 {
+    flex-basis: auto;
+}
+
+.st3 {
+    flex-basis: auto;
+    
+  }
+
+  .st4 {
+    flex-basis: auto;
+}
+
+.btm {
+  display: flex;
+  color: blue;
+  font-size: 10px;
+  justify-content: space-between;
+  background-color: cyan;
+  
+  bottom:0
+}
