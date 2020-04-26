@@ -4,6 +4,7 @@ import Friend from "./friend";
 import Setting from "./settings";
 import ImageComponent from './Image';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import home from "./home";
 var image1 = require("../src/Asset/bioshock3.jpg");
 var image2 = require("../src/Asset/Deadpool.png");
 var image3 = require("../src/Asset/Doge.jpg");
@@ -47,10 +48,11 @@ export default class proHome extends Component {
             <div className="st4">
               <Link to="/friend">
                 <h2>Friend</h2>
+
               </Link>
               
               <switch>
-                <Route path="/" exact />
+                
                 <Route path="/friend" exact component={Friend} />
                 <Route path="/settings" exact component={Setting} />
               </switch>
@@ -61,11 +63,12 @@ export default class proHome extends Component {
               <h1>Webpage</h1>
             </div>
             <div className="st2">
-              
+            <Link to="/settings">
                 <h2>Setting</h2>
-              
-              
+              </Link>
+               
             </div>
+            
           </Router>
           
         </div>
@@ -73,7 +76,7 @@ export default class proHome extends Component {
         <ImageComponent image={I} selectedImageProps = {this.selectedImage}/>
         {this.state.selectedImageSrc ? 
         <div>
-          <img src={this.state.selectedImageSrc} />
+           <img src={this.state.selectedImageSrc} />
         </div> : 
         null}
         <footer className="btm">
@@ -82,4 +85,11 @@ export default class proHome extends Component {
       </div>
     );
   }
+}
+
+const Home=()=>{
+  return(
+  <div>
+      <h1>Home Page</h1>
+  </div>)
 }

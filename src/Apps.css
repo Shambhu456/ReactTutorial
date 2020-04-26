@@ -5,3 +5,35 @@
 .txtg {
     color: green
 }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-content: left;
+    left:0px;
+    width: 100%;
+    min-height: 10vh;
+    margin: 0;
+    padding: 0%;
+    background-color: rgb(83, 88, 88);
+    color: white;
+}
+
+.nav-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    align-content: right;
+    list-style: none;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    min-height: 10vh;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(83, 88, 88);
+}

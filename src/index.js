@@ -27,8 +27,10 @@ import St from './styleApps'//Inline Styling
 import Es from './esApps' // External Styling
 import Project from './proHome'// Sample Project
 import Image from './Image' //Image
+import RApp from './RouterApp' //Router App
 
-ReactDOM.render(<Project/>,document.getElementById("root"))
+ReactDOM.render(<RApp/>,document.getElementById("root"))
+//ReactDOM.render(<Project/>,document.getElementById("root"))
 //const arrValues = [10,20,30,40];
 //ReactDOM.render(<L numbers = {arrValues}/>,document.getElementById("root"))
 //ReactDOM.unmountComponentAtNode(document.getElementById("root"))//Unmount the component from root
