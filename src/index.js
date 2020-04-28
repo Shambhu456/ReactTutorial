@@ -28,8 +28,11 @@ import Es from './esApps' // External Styling
 import Project from './proHome'// Sample Project
 import Image from './Image' //Image
 import RApp from './RouterApp' //Router App
+import Header from './ProjectHeader'//Project Header
+import Photo from './ProjectPhoto'//Project Header
+import Pro from './Project'
 
-ReactDOM.render(<RApp/>,document.getElementById("root"))
+ReactDOM.render(<Pro/>,document.getElementById("root"))
 //ReactDOM.render(<Project/>,document.getElementById("root"))
 //const arrValues = [10,20,30,40];
 //ReactDOM.render(<L numbers = {arrValues}/>,document.getElementById("root"))
