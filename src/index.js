@@ -31,6 +31,8 @@ import RApp from './RouterApp' //Router App
 import Header from './ProjectHeader'//Project Header
 import Photo from './ProjectPhoto'//Project Header
 import Pro from './Project'
+import PersonList from './PersonList'
+import Bind from './EventBind'
 
 ReactDOM.render(<Pro/>,document.getElementById("root"))
 //ReactDOM.render(<Project/>,document.getElementById("root"))

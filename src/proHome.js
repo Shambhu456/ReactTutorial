@@ -22,6 +22,7 @@ export default class proHome extends Component {
     this.setState({
       selectedImageSrc: imageSource
     })
+    
   }
   render() {
    const  I= [
