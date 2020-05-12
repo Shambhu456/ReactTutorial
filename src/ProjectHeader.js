@@ -15,13 +15,16 @@ export default class ProjectHeader extends Component {
                 <Link style={P} to='/'>
                 <h3>Home</h3>
                 </Link>
-                <h2>Webpage</h2>
+                <h2 >Webpage</h2>
                 <ul className="head-links">
                 <Link style={P} to='/friend'>
                     <li>Friends</li>
                     </Link>
                     <Link style={P} to='/setting'>
                     <li>Settings</li>
+                    </Link>
+                    <Link style={P} to='/countries'>
+                    <li>Countries</li>
                     </Link>
                 </ul>
             </div>

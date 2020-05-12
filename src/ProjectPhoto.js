@@ -45,7 +45,7 @@ export default class ProjectPhoto extends Component {
       const photo = image.src;
       const Ids = image.Id;
       return (
-        <div>
+        <div style={{justifyContent:"center"}}>
           <h1>{this.props.na}</h1>
           <Link to="./image">
             
@@ -69,9 +69,9 @@ export default class ProjectPhoto extends Component {
           <br />
           <br />
           <label>Title:</label>
-          <input type="text" />
+          <input type="text"  />
           <br />
-          <br />
+          <br />   
           <label>Description:</label>
           <textarea>Please provide description</textarea>
           <br />

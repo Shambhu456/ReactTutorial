@@ -1,0 +1,41 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 200px 40px;
+  grid-template-areas:
+    "m h h h h h h h h h h ."
+    "m c c c c c c c c c c c"
+    "m f f f f f f f f f f .";
+}
+
+.header {
+  grid-area: h;
+  background-color: teal;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-area: f;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  grid-area: m;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

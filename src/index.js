@@ -31,10 +31,11 @@ import RApp from './RouterApp' //Router App
 import Header from './ProjectHeader'//Project Header
 import Photo from './ProjectPhoto'//Project Header
 import Pro from './Project'
-import PersonList from './PersonList'
+import PersonList from './PersonList' // axios API
 import Bind from './EventBind'
-
-ReactDOM.render(<Pro/>,document.getElementById("root"))
+import DApp from './Componet/DialogBoxApp'
+import Form from './Form'
+ReactDOM.render(<Form/>,document.getElementById("root"))
 //ReactDOM.render(<Project/>,document.getElementById("root"))
 //const arrValues = [10,20,30,40];
 //ReactDOM.render(<L numbers = {arrValues}/>,document.getElementById("root"))

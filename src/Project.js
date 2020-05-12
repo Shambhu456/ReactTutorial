@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import Photo from "./ProjectPhoto";
 import ProjectHeader from "./ProjectHeader";
+import Footer from './Footer'
 import Friend from "./friend";
 import settings from "./settings";
 import ImageClick from './ImageClick'
+import Countries from './Countries'
+import Menu from './Menu'
+import './Project.css'
 import { BrowserRouter as Router,Switch,Route } from 'react-router-dom'
 
 export default class Project extends Component {
@@ -18,16 +22,14 @@ export default class Project extends Component {
     
   }
   render() {
-    const name = "Shambhu"
-    const Image = {
-      display: "block",
-      marginLeft: "auto",
-      marginRight: "auto",
-    };
+
     return (
       <Router>
-        <div>
+        <div className="ctn">
+        <div className="head">
           <ProjectHeader />
+          </div>
+          <div className="Image">           
           <br />
           <br />
           <br />
@@ -36,9 +38,15 @@ export default class Project extends Component {
             <Route path="/friend" component={Friend} />
             <Route path="/image" component={(props)=><ImageClick {...props} src={this.state.SelectedTitle}/>} />
             <Route path="/setting" component={settings} />
+            <Route path="/countries" component={Countries} />
           </Switch>
-          
-          
+          </div>
+          <div className="menu">
+          <Menu />
+          </div>
+          <div className="footer">
+          <Footer/>
+          </div>
         </div>
       </Router>
     );

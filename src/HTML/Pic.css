@@ -1,0 +1,34 @@
+.contn{
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: [main-start] 1fr [content-start]  5fr [content-end main-end];
+    grid-template-rows: 40px auto 40px;
+}
+
+.header{
+    grid-column: main-start/main-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    grid-column: content-start/content-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    grid-column: main-start/main-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

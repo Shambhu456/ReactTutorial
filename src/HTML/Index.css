@@ -1,0 +1,59 @@
+.cont{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    height: 100%;
+    /*flex-direction: column;/* Changes the direction from horizontal
+     to vertical*/
+     align-items: center;
+     /*justify-content: center;*/
+     
+     /*flex-start flex-end center space-around space-between space-evenly*/
+     
+     /* flex-start, stretch, center and flex-end */
+     
+    }
+/*.cont>div{
+    flex:2;
+
+} */
+.logout{
+    align-self: flex-end;
+}
+
+.search{
+   /* margin-left: auto;*/
+   align-self: flex-start;     
+}
+
+.home{
+    /*flex:1; Same as setting flex-grow:1,flex-shrink:1,flex-basis:1*/
+    order: 1;/*Used to order the items */
+    flex-grow: 1;/*Distribute extra space among the elements*/
+    flex-shrink: 1;/*Shrink at uniform rate*/
+    flex-basis: 1;/*Setting Base width of the element*/
+}
+
+.container{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows: 40px 200px 40px;
+}
+
+.header{
+/*grid-column-start: 1;
+grid-column-end: 3;*/
+grid-column: 2/-1;
+}
+
+.footer{
+    /*grid-column: 1/span 2;*/
+    grid-column: 2/-1;
+}
+
+.content{
+    grid-column: 2/-1;
+}
+.menu{
+    grid-row: 1/-1;
+}
